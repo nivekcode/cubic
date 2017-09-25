@@ -1,0 +1,13 @@
+.device-selection {
+  height: auto !important;
+}
+
+.full-height-column {
+  min-height: 100%;
+  display: flex;
+  > button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
