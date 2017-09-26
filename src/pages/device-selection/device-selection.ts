@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
-import {PhotoEditorPage} from '../photo-editor/photo-editor';
+import {PhotoEditorPage} from '../photo-viewer/photo-viewer';
 
 @Component({
     selector: 'page-home',

@@ -1,13 +1,13 @@
-import {NgModule, ErrorHandler} from '@angular/core';
+import {ErrorHandler, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
-import {MyApp} from './app.component';
-
-import {DeviceSelectionPage} from '../pages/device-selection/device-selection';
+import {SplashScreen} from '@ionic-native/splash-screen';
 
 import {StatusBar} from '@ionic-native/status-bar';
-import {SplashScreen} from '@ionic-native/splash-screen';
-import {PhotoEditorPage} from '../pages/photo-editor/photo-editor';
+import {IonicApp, IonicErrorHandler, IonicModule} from 'ionic-angular';
+
+import {DeviceSelectionPage} from '../pages/device-selection/device-selection';
+import {PhotoEditorPage} from '../pages/photo-viewer/photo-viewer';
+import {MyApp} from './app.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +28,7 @@ import {PhotoEditorPage} from '../pages/photo-editor/photo-editor';
     providers: [
         StatusBar,
         SplashScreen,
-        {provide: ErrorHandler, useClass: IonicErrorHandler}
+        {provide: ErrorHandler, useClass: IonicErrorHandler},
     ]
 })
 export class AppModule {
