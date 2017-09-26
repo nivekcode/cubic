@@ -1,0 +1,21 @@
+.device-icon {
+  font-size: 10rem;
+}
+
+.scroll-content {
+  padding: 0px !important;
+}
+
+.device-selection {
+  height: auto !important;
+}
+
+.full-height-column {
+  min-height: 100%;
+  display: flex;
+  > button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
