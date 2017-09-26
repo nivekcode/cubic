@@ -13,7 +13,9 @@ enum IMAGE_POSITION {
     selector: 'photo-editor',
     templateUrl: 'photo-viewer.html',
     providers: [
-        {provide: Camera, useClass: CameraMock},
+        // Use only in the browser
+        //{provide: Camera, useClass: CameraMock},
+        Camera,
         CameraService
     ]
 })
