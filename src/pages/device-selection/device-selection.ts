@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-home',
   templateUrl: 'device-selection.html'
 })
-export class HomePage {
+export class DeviceSelectionPage {
 
   constructor(public navCtrl: NavController) {
 
