@@ -1,0 +1,29 @@
+.editor-icon {
+  font-size: 10rem;
+}
+
+.editor-image {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.scroll-content {
+  padding: 0px !important;
+}
+
+img {
+  width: auto !important;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.full-height-column {
+  min-height: 100%;
+  display: flex;
+  div, button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: auto !important;
+  }
+}
