@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
+import {AlertController, NavController} from 'ionic-angular';
 import {PhotoEditorPage} from '../photo-viewer/photo-viewer';
 
 @Component({
@@ -8,12 +8,21 @@ import {PhotoEditorPage} from '../photo-viewer/photo-viewer';
 })
 export class DeviceSelectionPage {
 
-    constructor(public navCtrl: NavController) {
+    constructor(public navCtrl: NavController, private alertCtrl: AlertController ) {
 
     }
 
-    selectDevice() {
+    selectOneDevice() {
         this.navCtrl.push(PhotoEditorPage)
+    }
+
+    selectTwoDevices(){
+        let alert = this.alertCtrl.create({
+            title: 'Coming soon',
+            subTitle: 'Not yet implemented',
+            buttons: ['OK']
+        });
+        alert.present();
     }
 
 }
