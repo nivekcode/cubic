@@ -17,9 +17,8 @@ export class CameraService {
 
     public takePicture(): Promise<any> {
         return this.camera.getPicture(this.options).then((imageData) => {
-            //return 'data:image/jpeg;base64,' + imageData;
-            return imageData
-        }, (err) => {
+            return 'data:image/jpeg;base64,' + imageData;
+        }, () => {
             console.error('Something went wrong')
         });
     }
