@@ -24,7 +24,11 @@ export class PhotoEditorPage {
     leftImageData: string
     rightImageData: string
 
-    constructor(private cameraService: CameraService) {
+    constructor(private cameraService: CameraService, public navCtrl: NavController) {
+    }
+
+    goBack(){
+       this.navCtrl.pop()
     }
 
     takeLeftPicture(): void {
