@@ -1,16 +1,19 @@
 <ion-content padding>
     <div class="full-height-column">
         <div>
-            <img *ngIf="leftImageData" [src]="leftImageData">
+            <img (click)="takeLeftPicture()" *ngIf="leftImageData" [src]="leftImageData">
             <button *ngIf="!leftImageData" (click)="takeLeftPicture()" ion-button>
                 <ion-icon class="editor-icon" ios="ios-camera" md="md-camera"></ion-icon>
             </button>
         </div>
         <div>
-            <img *ngIf="rightImageData" [src]="rightImageData">
+            <img (click)="takeRightPicture()" *ngIf="rightImageData" [src]="rightImageData">
             <button *ngIf="!rightImageData" (click)="takeRightPicture()" ion-button>
                 <ion-icon class="editor-icon" ios="ios-camera" md="md-camera"></ion-icon>
             </button>
         </div>
     </div>
+    <ion-fab left bottom>
+        <button ion-fab color="light" (click)="goBack()"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    </ion-fab>
 </ion-content>
